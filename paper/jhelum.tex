@@ -22,7 +22,7 @@
 
 \begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing % trust me
 
-\title{Multiple components of the cold Jhelum stellar stream}
+\title{Multiple components of the Jhelum stellar stream}
 
 \correspondingauthor{Ana Bonaca}
 \email{ana.bonaca@cfa.harvard.edu}
@@ -30,7 +30,8 @@
 \author[0000-0002-7846-9787]{Ana Bonaca}
 \affil{Center for Astrophysics | Harvard \& Smithsonian, 60 Garden St, Cambridge, MA 02138, USA}
 
-% \author[0000-0002-1590-8551]{Charlie Conroy}
+\author[0000-0002-1590-8551]{Charlie Conroy}
+\affil{Center for Astrophysics | Harvard \& Smithsonian, 60 Garden St, Cambridge, MA 02138, USA}
 % \affil{Harvard--Smithsonian Center for Astrophysics, 60 Garden St, Cambridge, MA 02138, USA}
 
 \author{collaborators}
@@ -44,18 +45,17 @@
 % \affiliation{Max-Planck-Institut f\"ur Astronomie, Heidelberg}
 % \affiliation{Flatiron Institute, Simons Foundation}
 
-% David, Adrian, Josh, Kathryn
+% David, Adrian, Josh
+%% Kathryn
 
 \begin{abstract}\noindent % trust me
-- tidally disrupting satellites produce long streams of stars
-- until recently, it was only streams from the massive progenitors that have had internal structure
-- here we present jhelum -- first cold stream with transverse structure
-% Tidally disrupted globular clusters are transformed into thin, dynamically cold streams of stars that are extremely valuable tracers of the large- and small-scale distribution of mass in the Galaxy.
-% Using data from the Gaia second data release combined with Pan-STARRS photometry, we present a sample of highly probable members of the longest cold stream in the Milky Way, GD-1.
-% The resulting map of GD-1: (1) extends the apparent length of the stream by 20, (2) reveals plausible locations for the progenitor, (3) detects high-contrast gaps along the stream, and (4) indicates the existence of stream members perturbed off the main stream track.
-% These discoveries are only possible because of the exquisite astrometry from Gaia, which permits a clean separation of the stream from Milky Way stars.
-% The additional length and a proper treatment of the progenitor will aid in dynamical modeling of GD-1 for mapping the large-scale dark matter distribution.
-% The complex morphology of the stream points to a turbulent history; detailed phase-space properties of the perturbed stream members could potentially constrain dark matter substructure in the Milky Way.
+Tidally disrupted globular clusters produce long, thin and dynamically cold stellar streams that preserve a historical record of any gravitational perturbations.
+Signatures of perturbation appear as low surface brightness features and have historically been hard to detect due to contamination from field stars.
+We use astrometric data from the Gaia second data release and photometry from the Dark Energy Survey to identify highly probable members of Jhelum, a retrograde stellar stream in the Milky Way halo.
+The decontaminated map of Jhelum reveals that the stream has two components: a thin component and an offset, diffuse component.
+The width and the significance of the diffuse component vary along the stream, however, the two components have the same ratio of blue straggler to blue horizontal branch stars.
+This suggests that the debris originates from a single progenitor, and that the complex morphology has been imparted by its dynamical evolution in a changing environment.
+Further modeling of Jhelum, as well as similar studies of other streams, should .
 \end{abstract}
 
 \keywords{%
@@ -69,12 +69,12 @@ Galaxy:~kinematics~and~dynamics
 \section{Introduction}
 \label{sec:intro}
 
-- mw provides opportunity to study processes of gal formation in archaelogical evidence
-- halo dynamical times, streams track that change
-
-- streams regular so far
-- dynamical environment, should have features
-- now with gaia can study those
+% - mw provides opportunity to study processes of gal formation in archaelogical evidence
+% - halo dynamical times, streams track that change
+% 
+% - streams regular so far
+% - dynamical environment, should have features
+% - now with gaia can study those
 
 Stars escaping from globular clusters form thin, dynamically cold tidal streams \citep[e.g.,][]{combes1999}.
 The phase-space distribution of tidal debris is predominantly determined by the gravitational tidal field, so \citet{johnston1999} proposed measuring the distribution of matter in the Galaxy using stellar streams.
@@ -179,14 +179,41 @@ Therefore, the transverse variations in Jhelum density are intrinsic to the stre
 \includegraphics[width=0.9\textwidth]{phi2_histograms.pdf}
 \end{center}
 \caption{
-Histograms
+The profile of likely Jhelum members changes along the stream.
+Panels show $5^\circ$ wide regions along the stream, with the location in $\phi_1$ (indicated at the top) growing from left to right.
+Between $-3^\circ<\phi_1<2^\circ$, only a narrow component of the stream is present, while in the next $\phi_1$ bin, $6^\circ<\phi_1<11^\circ$, the stream features both the narrow and the wide component.
+Further along the stream, $15^\circ<\phi_1<20^\circ$, the stream consists of two narrow components separated by a gap, while at the trailing end, $20^\circ<\phi_1<25^\circ$, the gap vanishes and the stream appears as a single, wide feature.
 }
 \label{fig:histo}
 \end{figure*}
 
-- two component fit is better than a single component
-- significance / properties of the two components change along the stream 
+To quantify substructure in the Jhelum stellar stream, we model the $\phi_2$ distribution of likely stream members (Figure~\ref{fig:map}, top right).
+We assume a mixture model with two Gaussian components (defined by means $\mu_{1,2}$ and variances $\sigma^2_{1,2}$ for the narrow and wide component, respectively) and a background which is allowed to linearly vary with $\phi_2$ (defined by the gradient $a\rm_{bg}$).
+The density model for a given set of parameters $\theta = (\alpha_1, \alpha_2, \alpha_{\rm bg}, \mu_1, \mu_2, \sigma_1, \sigma_2, a_{\rm bg})$ is:
+\begin{equation}
+\begin{aligned}
+p(\phi_2 | \theta) = &\alpha_1 \mathcal{N}(\phi_2 | \mu_1, \sigma_1) + \alpha_2 \mathcal{N}(\phi_2 | \mu_2, \sigma_2) \\
+&+\alpha_{\rm bg} (a_{\rm bg}\phi_2 + \mathcal{U}(-5,5))
+\label{eq:model}
+\end{aligned}
+\end{equation}
+where $\alpha_{1,2}$ are the fractions of stars in the narrow and wide components, respectively, and $\alpha_{\rm bg} = 1 - \alpha_1 - \alpha_2$ is the fraction of the Milky Way field stars.
+We sample the parameter space $\theta$ with an affine invariant Markov Chain Monte Carlo ensemble sampler \citep{emcee}.
+The sampler ran with 64 walkers for 4096 steps, the first half of which were discarded as the burn-in, assuming flat priors in normalizations and means, and log-uniform priors for the variances and the background gradient.
+The highest-likelihood model (gray line in the top right of Figure~\ref{fig:map}) reproduces well the observed distribution of Jhelum stars.
+The amplitudes of both Gaussian components are statistically significant: \input{a1} for the narrow, and \input{a2} for the diffuse component.
+Their respective widths are \input{s1}\,deg and \input{s2}\,deg.
+At a distance of 13\,kpc, this corresponds to \input{w1}\,pc and \input{w2}\,pc, respectively, which is comparable to the widths of globular cluster streams in the Milky Way.
 
+The transverse structure of the Jhelum stream is globally asymmetric, however, there are variations along the stream (see Figure~\ref{fig:map}).
+In Figure~\ref{fig:histo} we show the transverse density profiles in four non-overlapping regions.
+Splitting the original sample increases the influence of Poisson statistics in the profiles, so we only discuss their features qualitatively.
+The left-most panel shows that leading end of the stream ($-3^\circ<\phi_1<2^\circ$) consists of a single, narrow component.
+Two components are detected both between $6^\circ<\phi_1<11^\circ$ and between $15^\circ<\phi_1<20^\circ$, however, while the component at smaller $\phi_2$ is wide in the former region (second panel from left), it is narrow in the latter and clearly separated from the narrow component at larger $\phi_2$ (third panel).
+At Jhelum's trailing end ($20^\circ<\phi_1<25^\circ$, right-most panel), there is again a single component, but almost twice as wide as that on the leading end.
+Curiously, the narrow component visible in the first three panels has an approximately constant width.
+This diversity of transverse density profiles along Jhelum underlines the intricacy of its formation history.
+In the next section we discuss scenarios which could produce such structures.
 
 \section{The origin of Jhelum components}
 \label{sec:origin}
@@ -213,27 +240,15 @@ Thicker portion of the line denotes the observed extent of the stream, while the
 - if such a shell, would expect the denser part to be at the apocenter
 - to test this, we need distances
 - parallaxes bad, but bhb standard candles, no difference, no gradient
-- photometric distances, same conclusion
 - assuming distance constant and 13\,kpc, the likely members in cylindrical coordinates on figure
 - denser part at the inner z edge -- not a conventional shell / fold
 
-% then a dynamical process shaped it, either before the full disruption (e.g., substructure in the progenitor) or after (e.g., something in the global potential), e.g., caustic
-- external perturbations have been shown to affect streams, such as the lmc or the bar
-- to assess, we find a best fitting orbit to the narrow track, bhb for distances, proper motions
+- to understand better the environment that shaped it, we find a best fitting orbit to the narrow track, bhb for distances, proper motions
 - assuming a simple multi-component MW potential
-
-% - goodness of fit
-% - predictions for radial velocity
-% - model on this orbit is a good fit to the track, but a single component
-
 - best-fitting orbit is regular, chaos not important on relevant time scales (lyapunov time)
 - inner halo -- not lmc, but might be influenced by the bar
 - this is not very likely as the stream is retrograde, but merits further investigation
-% - orbital period, distance -- corrotation with the bar? although retrograde..
 
-% - no multiple wraps along the wide component
-% - if an older wrap, question of where is the rest of the stream, ie why just 30deg long
-% - some additional effect missing, we discuss the options below
 
 \section{Discussion}
 \label{sec:discussion}
@@ -258,6 +273,19 @@ Thicker portion of the line denotes the observed extent of the stream, while the
 
 - rich in information
 
+
+\acknowledgements
+
+
+This project was developed in part at the 2018 \acronym{NYC} \gaia\ \acronym{DR2} Workshop at the Center for Computational Astrophysics of the Flatiron Institute in New York City in 2018 April.
+
+This work has made use of data from the European Space Agency (\acronym{ESA}) mission \gaia\ (\url{https://www.cosmos.esa.int/gaia}), processed by the \gaia\ Data Processing and Analysis Consortium (\acronym{DPAC}, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the \acronym{DPAC} has been provided by national institutions, in particular the institutions participating in the \gaia\ Multilateral Agreement.
+
+% This project used public archival data from the Dark Energy Survey (DES). Funding for the DES Projects has been provided by the U.S. Department of Energy, the U.S. National Science Foundation, the Ministry of Science and Education of Spain, the Science and Technology FacilitiesCouncil of the United Kingdom, the Higher Education Funding Council for England, the National Center for Supercomputing Applications at the University of Illinois at Urbana-Champaign, the Kavli Institute of Cosmological Physics at the University of Chicago, the Center for Cosmology and Astro-Particle Physics at the Ohio State University, the Mitchell Institute for Fundamental Physics and Astronomy at Texas A\&M University, Financiadora de Estudos e Projetos, Funda{\c c}{\~a}o Carlos Chagas Filho de Amparo {\`a} Pesquisa do Estado do Rio de Janeiro, Conselho Nacional de Desenvolvimento Cient{\'i}fico e Tecnol{\'o}gico and the Minist{\'e}rio da Ci{\^e}ncia, Tecnologia e Inova{\c c}{\~a}o, the Deutsche Forschungsgemeinschaft, and the Collaborating Institutions in the Dark Energy Survey.
+% 
+% The Collaborating Institutions are Argonne National Laboratory, the University of California at Santa Cruz, the University of Cambridge, Centro de Investigaciones Energ{\'e}ticas, Medioambientales y Tecnol{\'o}gicas-Madrid, the University of Chicago, University College London, the DES-Brazil Consortium, the University of Edinburgh, the Eidgen{\"o}ssische Technische Hochschule (ETH) Z{\"u}rich,  Fermi National Accelerator Laboratory, the University of Illinois at Urbana-Champaign, the Institut de Ci{\`e}ncies de l'Espai (IEEC/CSIC), the Institut de F{\'i}sica d'Altes Energies, Lawrence Berkeley National Laboratory, the Ludwig-Maximilians Universit{\"a}t M{\"u}nchen and the associated Excellence Cluster Universe, the University of Michigan, the National Optical Astronomy Observatory, the University of Nottingham, The Ohio State University, the OzDES Membership Consortium, the University of Pennsylvania, the University of Portsmouth, SLAC National Accelerator Laboratory, Stanford University, the University of Sussex, and Texas A\&M University.
+%
+% Based in part on observations at Cerro Tololo Inter-American Observatory, National Optical Astronomy Observatory, which is operated by the Association of Universities for Research in Astronomy (AURA) under a cooperative agreement with the National Science Foundation.
 
 \appendix
 % \section{Jhelum rotation matrix}
