@@ -54,8 +54,8 @@ Signatures of perturbation appear as low surface brightness features and have hi
 We use astrometric data from the Gaia second data release and photometry from the Dark Energy Survey to identify highly probable members of Jhelum, a retrograde stellar stream in the Milky Way halo.
 The decontaminated map of Jhelum reveals that the stream has two components: a thin component and an offset, diffuse component.
 The width and the significance of the diffuse component vary along the stream, however, the two components have the same ratio of blue straggler to blue horizontal branch stars.
-This suggests that the debris originates from a single progenitor, and that the complex morphology has been imparted by its dynamical evolution in a changing environment.
-Further modeling of Jhelum, as well as similar studies of other streams, should .
+This suggests that the debris originates from a single progenitor, and that the complex morphology has been imparted by its dynamical evolution in an evolving environment.
+% Further modeling of Jhelum, as well as similar studies of other streams, should .
 \end{abstract}
 
 \keywords{%
@@ -165,7 +165,11 @@ The $\phi_2$ distribution of likely Jhelum members (Figure~\ref{fig:map}, top ri
 Surveys such as Gaia and DES have complex selection functions \citep[e.g.,][]{bovy2017}, which can imprint density inhomogeneities in all stellar maps.
 To test whether the density structure observed in Jhelum is inherited from a survey strategy, we show a density map of all stars in our input catalog (Gaia crossmatched with DES, and with parallax $\varpi<1\,\rm mas$) in the middle panel of Figure~\ref{fig:map}.
 Dashed white lines bracket the two Jhelum components.
-The lines are offset from the best-fitting polynomial to the running median of the dense Jhelum component: \input{polytrack}.
+The lines are offset from the best-fitting polynomial to the running median of the dense Jhelum component:
+\begin{equation}
+\input{polytrack}
+\label{eq:track}
+\end{equation}
 Whereas there is a large density gradient along the $\phi_1$ direction, as positive $\phi_1$ values correspond to lower galactic latitudes, the overall stellar density changes little across the stream in the $\phi_2$ direction at a fixed $\phi_1$ location.
 
 Density variations observed in streams can also originate from nonuniform dust attenuation \citep[e.g.,][]{ibata2016}.
@@ -224,15 +228,6 @@ To uncover their origin, in this section we compare structural and dynamical pro
 % Otherwise, we would expect the components to differ both in stellar population and kinematics.
 % To uncover Jhelum's origin, we first compare stellar populations and kinematics in its components, and then explore orbital solutions that fit the stream.
 
-Blue horizontal branch (BHB) and blue straggler (BS) stars are present in Jhelum, with a low contamination rate from field stars (bottom panels of Figure~\ref{fig:properties}).
-The ratio of BHB to BS stars can distinguish between massive dwarf galaxy and globular cluster progenitors \citep[e.g.,][]{deason2015}, so we characterize the Jhelum stellar population with the BS to BHB ratio.
-We select BHBs at the Jhelum distance with: $-0.7<g-i<-0.2$, $15.5<g<16.5$ (dark orange box in Figure~\ref{fig:properties}) and BSs within the polygon $(g-i,g) = [(0.2,18.9), (0.2, 19.9), (-0.25, 18.7), (-0.25,17.7)]$ (medium orange box).
-In the Jhelum footprint (both spatial and proper-motion) there are a total of 31 BSs and 12 BHBs, compared to 12 BS and 2 BHB stars in the control field.
-This yields an intrinsic BS to BHB ratio of $N_{BS} / N_{BHB} = 1.9\pm 0.7$, consistent with a $M_V\approx-8$ dwarf galaxy progenitor.
-Split between the two components, the ratio becomes $1.7\pm0.9$ and $2.1\pm1.2$ for the narrow and wide component, respectively.
-Within uncertainties, the BHB to BS ratio is the same in the two Jhelum components, indicating a common origin.
-Going forward, detailed chemical abundances from spectroscopy will be crucial for definitively confirming the single-progenitor scenario.
-
 \begin{figure}
 \begin{center}
 \includegraphics[width=\columnwidth]{components.pdf}
@@ -243,13 +238,29 @@ Jhelum track, proper motion profiles and orbit fit
 \label{fig:components}
 \end{figure}
 
-- structural properties
-- running median 
-- the stream track deviates slightly from the great circle not much gradient either along the stream
-- gray line - whole stream median, gray mad
-- two components: red and blue, shown in figure~\ref{fig:components}, median and mad for errorbars
-- despite being offset by x deg spatially, the proper motions are remarkably similar
-- dispersion also similar, but uncertainties large
+We first map Jhelum components in the sky and in proper motions.
+We spatially define the narrow component as stars within $0.4^\circ$ from the ridgeline (Equation~\ref{eq:track}), and the wide component as stars $0.4^\circ-2^\circ$ below the ridgeline (as shown in Figure~\ref{fig:map}).
+For each component, we calculate average properties in $4^\circ$-wide, overlapping bins spaced by $3^\circ$ in the $\phi_1$ direction.
+From top to bottom, Figure~\ref{fig:components} shows the running medians of $\phi_2$ positions, $\mu_{\phi_1}$ and $\mu_{\phi_2}$ proper motion components, with red and blue points for the narrow and wide components, respectively.
+The size of the point scales with the number of Jhelum stars in the bin, while the shaded area encompasses the median absolute deviation in each component's track.
+
+Both Jhelum components trace a great circle, with their tracks only slightly curving from the $\phi_2=0$ line (Figure~\ref{fig:components}, top).
+The components are offset by $\sim0.9^\circ$ in the $\phi_2$ direction, and the offset is constant along the stream.
+Despite being spatially offset, the proper motions of the two components are remarkably similar (Figure~\ref{fig:components}, middle and bottom).
+% At fixed $\phi_1$, even the proper motion dispersion is comparable between the two components.
+The dispersion in proper motions is large ($0.7-1.2\,\rm mas\,yr^{-1}$) and comparable to the observational uncertainties (median for likely Jhelum members is $0.7\rm\, mas\, yr^{-1}$), both of which are much smaller than the typical kinematic offset between the two components ($\lesssim0.3\,\rm mas\,yr^{-1}$).
+At the current precision, the Jhelum components are kinematically indistinguishable.
+
+Next, we analyze the stellar population of Jhelum.
+Interestingly, blue horizontal branch (BHB) and blue straggler (BS) stars are present in Jhelum, with a low contamination rate from field stars (bottom panels of Figure~\ref{fig:properties}).
+The ratio of BHB to BS stars can distinguish between massive dwarf galaxy and globular cluster progenitors \citep[e.g.,][]{deason2015}, so we characterize the Jhelum stellar population with the BS to BHB ratio.
+We select BHBs at the Jhelum distance with: $-0.7<g-i<-0.2$, $15.5<g<16.5$ (dark orange box in Figure~\ref{fig:properties}) and BSs within the polygon $(g-i,g) = [(0.2,18.9), (0.2, 19.9), (-0.25, 18.7), (-0.25,17.7)]$ (medium orange box).
+In the Jhelum footprint (both spatial and proper-motion) there are a total of 31 BSs and 12 BHBs, compared to 12 BS and 2 BHB stars in the control field.
+This yields an intrinsic BS to BHB ratio of $N_{BS} / N_{BHB} = 1.9\pm 0.7$, consistent with a $M_V\approx-8$ dwarf galaxy progenitor.
+Split between the two components, the ratio becomes $1.7\pm0.9$ and $2.1\pm1.2$ for the narrow and wide component, respectively.
+Within uncertainties, the BHB to BS ratio is the same in the two Jhelum components, indicating a common origin.
+However, detailed chemical abundances from spectroscopy will be crucial to definitively establish the single-progenitor scenario.
+
 
 \begin{figure}
 \begin{center}
@@ -258,10 +269,14 @@ Jhelum track, proper motion profiles and orbit fit
 \caption{
 Best-fitting orbit of the Jhelum stellar stream in cylindrical Galactocentric coordinates (top).
 Thicker portion of the line denotes the observed extent of the stream.
-while the insets present likely Jhelum members in these coordinates.
+The dense Jhelum component is closer to the Galacric plane than the diffuse component (bottom).
 }
 \label{fig:galactocentric}
 \end{figure}
+
+- not much pm gradient either along the stream
+- look whether there are dynamical models
+
 
 % - if indeed a single progenitor, could be that just projected 2 component, but in fact a sheet whose one side is observed edge-on in a fold 
 % - if such a shell, would expect the denser part to be at the apocenter
