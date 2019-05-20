@@ -1,0 +1,11 @@
+*.fits
+*.npy
+*.cmd
+*.dat
+*.h5
+
+*.aux
+*.log
+*.bbl
+*.blg
+*.pdf
