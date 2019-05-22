@@ -233,7 +233,9 @@ To uncover their origin, in this section we compare structural and dynamical pro
 \includegraphics[width=\columnwidth]{components.pdf}
 \end{center}
 \caption{
-Jhelum track, proper motion profiles and orbit fit
+On-sky distribution (top) and proper motion profiles (middle, bottom) of the narrow and wide Jhelum components (red and blue points, respectively). 
+Spatially offset by $\sim0.9^\circ$, the two Jhelum components have proper motions consistent within uncertainties (shaded area).
+The best-fitting orbit in the standard Milky Way potential reproduces the sky and proper motion distribution of the narrow component (thin line).
 }
 \label{fig:components}
 \end{figure}
@@ -252,15 +254,14 @@ The dispersion in proper motions is large ($0.7-1.2\,\rm mas\,yr^{-1}$) and comp
 At the current precision, the Jhelum components are kinematically indistinguishable.
 
 Next, we analyze the stellar population of Jhelum.
-Interestingly, blue horizontal branch (BHB) and blue straggler (BS) stars are present in Jhelum, with a low contamination rate from field stars (bottom panels of Figure~\ref{fig:properties}).
+Interestingly, blue horizontal branch (BHB) and blue straggler (BS) stars are present in Jhelum, and they are hardly contaminated with field stars (bottom panels of Figure~\ref{fig:properties}).
 The ratio of BHB to BS stars can distinguish between massive dwarf galaxy and globular cluster progenitors \citep[e.g.,][]{deason2015}, so we characterize the Jhelum stellar population with the BS to BHB ratio.
 We select BHBs at the Jhelum distance with: $-0.7<g-i<-0.2$, $15.5<g<16.5$ (dark orange box in Figure~\ref{fig:properties}) and BSs within the polygon $(g-i,g) = [(0.2,18.9), (0.2, 19.9), (-0.25, 18.7), (-0.25,17.7)]$ (medium orange box).
 In the Jhelum footprint (both spatial and proper-motion) there are a total of 31 BSs and 12 BHBs, compared to 12 BS and 2 BHB stars in the control field.
 This yields an intrinsic BS to BHB ratio of $N_{BS} / N_{BHB} = 1.9\pm 0.7$, consistent with a $M_V\approx-8$ dwarf galaxy progenitor.
 Split between the two components, the ratio becomes $1.7\pm0.9$ and $2.1\pm1.2$ for the narrow and wide component, respectively.
 Within uncertainties, the BHB to BS ratio is the same in the two Jhelum components, indicating a common origin.
-However, detailed chemical abundances from spectroscopy will be crucial to definitively establish the single-progenitor scenario.
-
+However, detailed chemical abundances from spectroscopy are required to definitively establish the single-progenitor scenario.
 
 \begin{figure}
 \begin{center}
@@ -269,55 +270,92 @@ However, detailed chemical abundances from spectroscopy will be crucial to defin
 \caption{
 Best-fitting orbit of the Jhelum stellar stream in cylindrical Galactocentric coordinates (top).
 Thicker portion of the line denotes the observed extent of the stream.
-The dense Jhelum component is closer to the Galacric plane than the diffuse component (bottom).
+The dense Jhelum component is closer to the Galactic plane than the diffuse component (bottom).
 }
 \label{fig:galactocentric}
 \end{figure}
 
-- not much pm gradient either along the stream
-- look whether there are dynamical models
+Finally, we explore whether both of Jhelum components can be accounted for with a simple dynamical model.
+Assuming a standard Milky Way potential \citep{gala}, we search for orbits that simultaneously fit the sky distribution of the narrow component, its proper motion profile and that place stream at a constant distance of 13\,kpc.
+The best-fitting orbit, shown as a thin line in Figure~\ref{fig:components}, matches well the observed track and proper motion gradients.
 
-
-% - if indeed a single progenitor, could be that just projected 2 component, but in fact a sheet whose one side is observed edge-on in a fold 
-% - if such a shell, would expect the denser part to be at the apocenter
-% - to test this, we need distances
-% - parallaxes bad, but bhb standard candles, no difference, no gradient
-% - assuming distance constant and 13\,kpc, the likely members in cylindrical coordinates on figure
-% - denser part at the inner z edge -- not a conventional shell / fold
-
-- to understand better the environment that shaped it, we find a best fitting orbit to the narrow track, bhb for distances, proper motions
-- assuming a simple multi-component MW potential
-- best-fitting orbit is regular, chaos not important on relevant time scales (lyapunov time)
-- inner halo -- not lmc, but might be influenced by the bar
-- this is not very likely as the stream is retrograde, but merits further investigation
+In Figure~\ref{fig:galactocentric} we present the Jhelum stream and its best-fitting orbit in cylindrical Galactocentric coordinates.
+The thin line traces Jhelum's orbit for the last 5\,Gyr, while the thick line marks the present-day extent of the stream (top panel).
+Jhelum orbits between 8 and 24\,kpc, with a period of $\sim300$\,Myr, and is currently just past the pericenter.
+The bottom panel zooms in on the stream's current location, and also shows the distribution of likely Jhelum members (assuming a constant distance of 13\,kpc).
+On average, the orbit matches the narrow Jhelum component, but they are somewhat misaligned because the best-fit orbit has a small gradient in distance along the stream, which is currently unresolved in the data.
+Jhelum's wide component is $\sim0.5\,\rm kpc$ further from the Galactic plane than its narrow component.
+None of the previous orbital wraps pass through the wide component, arguing against the two components being debris of a single progenitor released at subsequent pericentric passages.
+In the next section we discuss possible origin scenarios for the transverse structure of the Jhelum stream.
 
 
 \section{Discussion}
 \label{sec:discussion}
-- summary
-- same progenitor, truly 2 components, not reproducible in a simple static model
+The combination of Gaia astrometry and DES photometry allowed us to cleanly select members of the Jhelum stream.
+The resulting map reveals Jhelum has two statistically-significant transverse components, separated by $\sim0.9^\circ$.
+The two components have similar stellar populations and similar proper motion gradients, which suggests they originate from the same progenitor.
+However, in a simple Milky Way potential, the orbit that best-fits the observed distribution of the narrow component fails to simultaneously match the wide component.
 
-- listing of possible other explanations:
+Here we discuss possible origin scenarios for the two components of the Jhelum stream:
 \begin{itemize}
- \item multiple progenitors (e.g., gc + dwarf galaxy) -- however, stellar populations uniform across the stream, but could further test with chemical abundances
- \item dynamically cold structure in the progenitor -- contrived?
- \item caustic -- would happen preferentially at the apocenter, but stream is just past the pericenter, so this type ruled out, however, it could be also a caustic of a fully phase-mixed distribution
- \item chaos -- would need to be close to a resonant orbit, but orbit looks regular (although chaotic orbit might still be possible if the adopted potential is very different from the true one)
- \item precession of orbital plane if close to the disk on approx circular orbit (Dehnen2018), or if pericenter is close to the center of the Galaxy (eccentric orbit at some angle wrt the disk; Erkal2016) -- eccentricity = 0.5, zmax = 30 kpc; -- not captured in the streakline model
-%  \item lmc effect? -- not that close in the past
-%  \item a bar effect? -- seems like crossed the plane at very small x, y ($R\sim7\,\rm kpc$), will create a stream model in a barred potential
+ \item{\emph{Multiple progenitors:} similar ratio of blue straggler to blue horizontal branch stars indicates the two components have the same stellar population, but there is still room for two distinct progenitors that have similar BS to BHB ratios \citep[e.g., a massive globular cluster and a low-mass dwarf galaxy,][]{deason2015}.
+ This hypothesis can be directly tested by measuring chemical abundances in the two components.
+ }
+ \item{\emph{Kinematic substructure in the progenitor:} disruption of globular clusters initialized in dark matter subhalos leads to non-trivial density structure of the resulting streams \citep[e.g.,][]{penarrubia2017, carlberg2018}.
+ In this scenario, the wide component of Jhelum would be stars stripped while the globular cluster was still in the subhalo \citep[similar to the recently reported GD-1 cocoon,][]{malhan2019}, while the narrow component would be stars more recently released directly in the Milky Way gravitational potential.
+ The velocity dispersion in each component should reflect their local environment prior to the formation of the stream \citep[e.g.,][]{fardal2015}.
+ Precise measurements of either proper motions or radial velocities can test whether the wide component is indeed kinematically hotter than the narrow one.
+ }
+ \item{\emph{Fold caustic:} tidal debris distributed in a plane, but viewed almost edge-on, could feature the bimodal density profile observed in Jhelum.
+ Two-dimensional shells are commonly observed \citep[e.g.,][]{tal2009,kadofong2018}, however, their densest part, unlike Jhelum's, is at the largest galactocentric radius.
+ A more general fold caustic of a fully phase-mixed distribution is still allowed \citep[e.g.,][]{tremaine1999}, in which case the velocity dispersion in the dense component of Jhelum should be higher than in its diffuse part.
+ Precise kinematics will test this formation pathway as well.
+ }
+ \item{\emph{Precession of the orbital plane:} streams orbiting in non-spherical potentials widen because their orbits precess \citep[e.g.,][]{erkal2016, dehnen2018}.
+ Jhelum's orbit is significantly affected by the Milky Way disk, so its extended structure may be attributed to orbital precession.
+ This effect is not captured in simple streakline models of streams, so more detailed, $N$-body modeling of Jhelum is required.
+%  if close to the disk on approx circular orbit (Dehnen2018), or if pericenter is close to the center of the Galaxy (eccentric orbit at some angle wrt the disk; Erkal2016) -- eccentricity = 0.5, zmax = 30 kpc; -- not captured in the streakline model
+ }
+ \item{\emph{Chaos:} streams formed close to a resonant orbit often have low surface-brightness envelopes \citep[e.g.,][]{pw2016}.
+ In a simple gravitational potential, Jhelum's orbit is regular (see Figure~\ref{fig:galactocentric}).
+%  More quantitatively, the Lyapunov time of Jhelum's orbit, which sets the time when chaos becomes dynamically important, is $\gg t_{Hubble}$.
+ However, a chaotic orbit may still be possible if the adopted potential is very different from the true one.
+ }
+ \item{\emph{Time-dependent perturbations:} massive, dynamical perturbers such as the rotating bar or Large Magellanic Cloud (LMC) can affect the structure of stellar streams \citep[e.g.,][]{pearson2017, erkal2019}.
+ Since Jhelum is orbiting in the inner Galaxy, the LMC is likely not a major perturber (their closest approach was $\gtrsim30$\,kpc).
+ However, Jhelum comes within $\sim8\,$kpc from the Galactic center, where the bar may influence even streams on retrograde orbits.
+ }
 \end{itemize}
 
-- multiple wraps -- globular clusters disrupting in a cosmological N-body dark matter halo produce cold streams that are accompanied by a diffuse, dynamically older component (R.~Carlberg, private communication), penarrubia
+- indus on the same orbit highly suggestive -> orbit probably ballpark ok
+- would argue against major perturbations from chaos or time-dependence, or the debris being fully phase mixed
+- if indus and jhelum are dynamically related, and have a common progenitor, it should have been massive
+- this would simultaneously explain the streams' width and the high BS to BHB ratio of a $M_V=-8$ dwarf
 
+- still on the table for 2 jhelum components: gc and dwarf, progenitor substructure, plane precession
 - spectroscopy will help -- test single progenitor through chemical abundances
-- can distinguish between different scenarios based on mean radial velocity trends and also velocity dispersion
+- can distinguish between different single-progenitor scenarios based on mean radial velocity trends and also velocity dispersion
 
-- rich in information
+- streams rich in information
 
+
+% % - if indeed a single progenitor, could be that just projected 2 component, but in fact a sheet whose one side is observed edge-on in a fold 
+% % - if such a shell, would expect the denser part to be at the apocenter
+% % - to test this, we need distances
+% % - parallaxes bad, but bhb standard candles, no difference, no gradient
+% % - assuming distance constant and 13\,kpc, the likely members in cylindrical coordinates on figure
+% % - denser part at the inner z edge -- not a conventional shell / fold
+% 
+% - best-fitting orbit is regular, chaos not important on relevant time scales (lyapunov time)
+% - inner halo -- not lmc, but might be influenced by the bar
+% - this is not very likely as the stream is retrograde, but merits further investigation
+% 
+% - multiple wraps -- globular clusters disrupting in a cosmological N-body dark matter halo produce cold streams that are accompanied by a diffuse, dynamically older component (R.~Carlberg, private communication), penarrubia
+% 
 
 \acknowledgements
 
+Kathryn, Ray
 
 This project was developed in part at the 2018 \acronym{NYC} \gaia\ \acronym{DR2} Workshop at the Center for Computational Astrophysics of the Flatiron Institute in New York City in 2018 April.
 
