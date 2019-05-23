@@ -49,13 +49,13 @@
 %% Kathryn
 
 \begin{abstract}\noindent % trust me
-Tidally disrupted globular clusters produce long, thin and dynamically cold stellar streams that preserve a historical record of any gravitational perturbations.
-Signatures of perturbation appear as low surface brightness features and have historically been hard to detect due to contamination from field stars.
-We use astrometric data from the Gaia second data release and photometry from the Dark Energy Survey to identify highly probable members of Jhelum, a retrograde stellar stream in the Milky Way halo.
-The decontaminated map of Jhelum reveals that the stream has two components: a thin component and an offset, diffuse component.
-The width and the significance of the diffuse component vary along the stream, however, the two components have the same ratio of blue straggler to blue horizontal branch stars.
-This suggests that the debris originates from a single progenitor, and that the complex morphology has been imparted by its dynamical evolution in an evolving environment.
-% Further modeling of Jhelum, as well as similar studies of other streams, should .
+Simulations of tidally disrupting Milky Way satellites produce long and thin---nearly one-dimensional---stellar streams. 
+Using astrometric data from the Gaia second data release and photometry from the Dark Energy Survey, we demonstrate that Jhelum, a stellar stream in the inner halo, is a two-dimensional structure.
+Spatial distribution of highly probable Jhelum members reveals a dense thin component and an associated diffuse, vertically offset component.
+The two Jhelum components have indistinguishable proper motions and a similar ratio of blue straggler to blue horizontal branch stars.
+These indicate a common origin for Jhelum components, but while the best-fit orbit to the narrow component also traces the Indus stream, it does not capture Jhelum's wide component.
+Substructure in the Jhelum progenitor or precession of its tidal debris in the Milky Way potential can explain the observed structure of Jhelum, and future spectroscopic data can distinguish between these formation scenarios.
+Stellar streams observed in the \gaia\ era have substructure and it contains a rich volume on the dynamical history of the Milky Way.
 \end{abstract}
 
 \keywords{%
@@ -269,7 +269,8 @@ However, detailed chemical abundances from spectroscopy are required to definiti
 \end{center}
 \caption{
 Best-fitting orbit of the Jhelum stellar stream in cylindrical Galactocentric coordinates (top).
-Thicker portion of the line denotes the observed extent of the stream.
+Thicker portion of the orange line denotes the observed extent of Jhelum.
+The same orbit simultaneously matches the location of the Indus stream (red thick line).
 The dense Jhelum component is closer to the Galactic plane than the diffuse component (bottom).
 }
 \label{fig:galactocentric}
@@ -280,13 +281,14 @@ Assuming a standard Milky Way potential \citep{gala}, we search for orbits that 
 The best-fitting orbit, shown as a thin line in Figure~\ref{fig:components}, matches well the observed track and proper motion gradients.
 
 In Figure~\ref{fig:galactocentric} we present the Jhelum stream and its best-fitting orbit in cylindrical Galactocentric coordinates.
-The thin line traces Jhelum's orbit for the last 5\,Gyr, while the thick line marks the present-day extent of the stream (top panel).
+The thin orange line traces Jhelum's orbit for the last 5\,Gyr, while the thick orange line marks the present-day extent of the stream (top panel).
 Jhelum orbits between 8 and 24\,kpc, with a period of $\sim300$\,Myr, and is currently just past the pericenter.
+Interestingly, the $\sim0.5\,\rm{Gyr}$ old orbital segment traces the Indus stream (thick red line, based on the sky positions and typical distance reported in \citealt{shipp2018}).
+Originally suggested by \citet{shipp2018} based on their physical proximity, Indus being another wrap of the Jhelum stream would also be consistent with the massive progenitor inferred from the high BS to BHB ratio.
+If the connection is confirmed, Indus and Jhelum would be one of the longest tidal structures in the Milky Way, and therefore extremely constraining for its gravitational potential \citep{bh2018}.
+A similar analysis of Indus is required to definitively establish the two streams are dynamically related, which we defer to future work.
 
-- if indus and jhelum are dynamically related, and have a common progenitor, it should have been massive
-- this would simultaneously explain the streams' width and the high BS to BHB ratio of a $M_V=-8$ dwarf
-
-The bottom panel of Figure~\ref{fig:galactocentric} zooms in on the stream's current location, and also shows the distribution of likely Jhelum members (assuming the distance gradient from the best-fit orbit).
+The bottom panel of Figure~\ref{fig:galactocentric} zooms in on Jhelum's current location, and also shows the distribution of its likely members (assuming the distance gradient from the best-fit orbit).
 Jhelum's wide component is $\sim0.5\,\rm kpc$ further from the Galactic plane than its narrow component.
 The orbit matches the narrow Jhelum component, but none of the previous orbital wraps pass through the wide component, arguing against the two components being debris of a single progenitor released at subsequent pericentric passages.
 In the next section we discuss possible origin scenarios for the transverse structure of the Jhelum stream.
@@ -328,21 +330,20 @@ Here we discuss possible origin scenarios for the two components of the Jhelum s
  }
 \end{itemize}
 
-All these formation scenarios merit further investigation, but we prefer solutions where Jhelum is still a coherent tidal structure on a largely unperturbed orbit.
-Our best-fit orbit for Jhelum simultaneously (and independently) matches the Indus stream, suggesting that only minor effects are allowed from the bar, chaos or LMC.
+All these formation scenarios merit further investigation, but solutions where Jhelum is still a coherent tidal structure on a largely unperturbed orbit appear more likely.
+Our best-fit orbit for Jhelum simultaneously (and independently) matches the Indus stream, suggesting that only minor perturbations are allowed from the bar, chaos or LMC.
 Both streams are still coherent, so this argues against the fold caustic interpretation for Jhelum's vertical structure.
 The remaining scenarios can be distinguished with a combination of spectroscopic data and more detailed dynamical modeling.
 Chemical abundances will determine whether both Jhelum components originate from the same progenitor.
 In the case of a single progenitor, confronting the theoretical and observed radial velocities in the two Jhelum components will differentiate between them originating from different substructures within the progenitor or being precessing debris.
 
-- streams rich in information
-- dynamics within the stream, multiple linked
-- long very informative -- good for global scale
-- structure within streams -- tell about smaller scales
+The transverse structure that \gaia\ revealed in the Jhelum stream is evidence of a formation mechanism beyond simple tidal disruption.
+The only other stream studied to similar detail with \gaia\ is GD-1 \citep{pwb}, where the discovered off-stream features may be evidence of a recent perturbation \citep{bonaca2018}.
+These discoveries signal the dawn of a new era, in which we resolve the internal structure of thin stellar streams and use it to trace the fine structure of their formative environment.
 
 \acknowledgements
 
-Kathryn, Ray, Scott
+We thank Ray Carlberg, Denis Erkal, Kathryn Johnston, Nora Shipp, Scott Tremaine for helpful conversations.
 
 This project was developed in part at the 2018 \acronym{NYC} \gaia\ \acronym{DR2} Workshop at the Center for Computational Astrophysics of the Flatiron Institute in New York City in 2018 April.
 
