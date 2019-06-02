@@ -322,10 +322,10 @@ However, in a simple Milky Way potential, the orbit that best-fits the observed 
 
 Here we discuss possible origin scenarios for the two components of the Jhelum stream:
 \begin{itemize}
- \item{\emph{Multiple progenitors:} similar ratios of blue straggler to blue horizontal branch stars suggest that the two components have the same stellar population, but there is still room for two distinct progenitors that have similar BS to BHB ratios \citep[e.g., a low-mass globular cluster and a low-mass dwarf galaxy,][]{deason2015}.
+ \item{\emph{Multiple progenitors:} the similar ratios of blue straggler to blue horizontal branch stars suggest that the two components have the same stellar population, but there is still room for two distinct progenitors that have similar BS to BHB ratios \citep[e.g., a low-mass globular cluster and a low-mass dwarf galaxy,][]{deason2015}.
  This hypothesis can be directly tested by measuring chemical abundances in the two components.
  }
- \item{\emph{Kinematic substructure in the progenitor:} disruption of globular clusters initialized in dark matter subhalos leads to non-trivial density structure of the resulting streams \citep[e.g.,][]{penarrubia2017, carlberg2018}.
+ \item{\emph{Kinematic substructure in the progenitor:} the disruption of globular clusters initialized in dark matter subhalos leads to non-trivial density structure of the resulting streams \citep[e.g.,][]{penarrubia2017, carlberg2018}.
  In this scenario, the wide component of Jhelum would be stars stripped while the globular cluster was still in the subhalo \citep[similar to the recently reported GD-1 cocoon,][]{malhan2019}, while the narrow component would be stars more recently released directly in the Milky Way gravitational potential.
  The velocity dispersion in each component should reflect their local environment prior to the formation of the stream \citep[e.g.,][]{fardal2015}.
  Precise measurements of either proper motions or radial velocities can test whether the wide component is indeed kinematically hotter than the narrow one.
@@ -338,12 +338,15 @@ Here we discuss possible origin scenarios for the two components of the Jhelum s
  \item{\emph{Precession of the orbital plane:} streams orbiting in non-spherical potentials widen because their orbits precess \citep[e.g.,][]{erkal2016, dehnen2018}.
  Jhelum's orbit is significantly affected by the Milky Way disk, so its extended structure may be attributed to orbital precession.
  This effect is not captured in simple streakline models of streams, so more detailed, $N$-body modeling of Jhelum is required.
+ \apw{I'm confused about this statement: mock stream models definitely do capture the effect of differential orbital precession, so I think this paragraph needs to be edited or dropped.}
  }
- \item{\emph{Chaos:} streams formed close to a resonant orbit often have low surface-brightness envelopes \citep[e.g.,][]{pw2016}.
- In a simple gravitational potential, Jhelum's orbit is regular (see Figure~\ref{fig:galactocentric}).
- A chaotic orbit may still be possible if the adopted potential is very different from the true one, although this is disfavored by Indus matching Jhelum's orbit.
+ \item{\emph{Chaos:} streams formed on chaotic (even weakly-chaotic) orbits may deveop low surface-brightness envelopes \citep[e.g.,][]{pw2016}.
+ However, in our simple gravitational potential, Jhelum's orbit is regular (see Figure~\ref{fig:galactocentric}):
+ Within the Galactocentric radii relevant to Jhelum, the global mass distribution is likely close to spherical or mildly oblate \citep[e.g.,][]{kupper2015}, and thus chaos driven by the global potential is likely not relevant for Jhelum.
+ % A chaotic orbit may still be possible if the adopted potential is very different from the true one, although this is disfavored by Indus matching Jhelum's orbit.
+ \apw{I didn't like the argument that was here, or at least it's not very strong. I added a sentence with a different argument.}
  }
- \item{\emph{Time-dependent perturbations:} massive, dynamical perturbers such as the rotating bar or Large Magellanic Cloud (LMC) can affect the structure of stellar streams \citep[e.g.,][]{pearson2017, erkal2019}.
+ \item{\emph{Time-dependent perturbations:} massive, dynamical perturbers such as the rotating bar or Large Magellanic Cloud (LMC) can affect the structure of stellar streams \citep[e.g.,][]{pw2016b, pearson2017, erkal2019}.
  Since Jhelum is orbiting in the inner Galaxy, the LMC is likely not a major perturber (its closest approach was $\gtrsim30$\,kpc).
  However, Jhelum comes within $\sim8\,$kpc from the Galactic center, where the bar may influence even streams on retrograde orbits.
  }
@@ -395,6 +398,14 @@ This work has made use of data from the European Space Agency (\acronym{ESA}) mi
 % \label{eq:rotmat}
 % \end{equation*}
 % % \end{widetext}
+
+\software{
+    \package{Astropy} \citep{astropy, astropy2018},
+    \package{gala} \citep{gala},
+    \package{matplotlib} \citep{mpl},
+    \package{numpy} \citep{numpy},
+    \package{scipy} \citep{scipy}
+}
 
 \bibliographystyle{aasjournal}
 \bibliography{jhelum}
