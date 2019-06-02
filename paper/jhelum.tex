@@ -252,7 +252,8 @@ The best-fitting orbit in the standard Milky Way potential reproduces the sky an
 
 We first analyze the stellar population of Jhelum.
 Interestingly, blue horizontal branch (BHB) and blue straggler (BS) stars are present in Jhelum, and they are hardly contaminated with field stars (bottom panels of Figure~\ref{fig:properties}).
-The ratio of BHB to BS stars can distinguish between massive dwarf galaxy and globular cluster progenitors \citep[e.g.,][]{deason2015}, so we characterize the Jhelum stellar population with the BS to BHB ratio.
+The ratio of BHB to BS stars can distinguish between massive dwarf galaxy and globular cluster progenitors \citep[e.g.,][]{momany2007, deason2015}, so we characterize the Jhelum stellar population with the BS to BHB ratio.
+\apw{I added a reference above to Momany because the Deason paper is just an application of their idea.}
 We select BHBs at the Jhelum distance with: $-0.7<g-i<-0.2$, $15.5<g<16.5$ (dark orange box in Figure~\ref{fig:properties}) and BSs within the polygon $(g-i,g) = [(0.2,18.9), (0.2, 19.9), (-0.25, 18.7), (-0.25,17.7)]$ (medium orange box).
 In the Jhelum footprint (both spatial and proper-motion) there are a total of 31 BSs and 12 BHBs, compared to 12 BS and 2 BHB stars in the control field.
 Subtracting the field population yields an intrinsic BS to BHB ratio of $N_{BS} / N_{BHB} = 1.9\pm 0.7$
@@ -287,14 +288,15 @@ The dense Jhelum component is closer to the Galactic plane than the diffuse comp
 \label{fig:galactocentric}
 \end{figure}
 
-Finally, we explore whether both of Jhelum components can be explained within a simple dynamical model.
-Assuming a standard Milky Way potential \citep{gala}, we use the BFGS minimization algorithm to search for orbits that simultaneously fit the sky distribution of the narrow component, its proper motion profile and that place stream at a constant distance of 13\,kpc.
-The best-fitting orbit, shown as a thin line in Figure~\ref{fig:components}, matches well the observed track and proper motion gradients.
+Finally, we explore whether both Jhelum components can be explained within a simple dynamical model.
+Assuming a standard Milky Way potential \citep{gala}, we use the BFGS minimization algorithm to search for orbits that simultaneously fit the sky distribution of the narrow component, its proper motion profile and that place stream at a constant distance of 13\,kpc (similar to the orbit-fitting method defined and used in \citealt{pwb}).
+The best-fitting orbit, shown as a thin line in Figure~\ref{fig:components}, matches the observed track and proper motion gradients.
 
 In Figure~\ref{fig:galactocentric} we present the Jhelum stream and its best-fitting orbit in cylindrical Galactocentric coordinates.
 The thin orange line traces Jhelum's orbit for the last 5\,Gyr, while the thick orange line marks the present-day extent of the stream (top panel).
 Jhelum orbits between 8 and 24\,kpc, with a period of $\sim300$\,Myr, and is currently just past the pericenter.
 
+\apw{I got confused here: what is the 0.5 Gyr old segment? Also: I think 5 Gyr is probably too long to show. The orbit integration definitely can't be trusted for that long of a time period because the potential isn't known or defined very precisely.}
 Remarkably, the $\sim0.5\,\rm{Gyr}$ old orbital segment traces the Indus stream (thick red line, based on the sky positions and typical distance reported in \citealt{shipp2018}).
 This agreement may be dynamical evidence that Indus and Jhelum are different orbital arms of the same progenitor, first suggested by \citet{shipp2018} based on the streams' similar width, $\sim1^\circ$, and metallicity, $\rm[Fe/H]\sim-1.4$, as well as their physical proximity.
 A fairly massive progenitor would be required to produce the combined stellar debris of Indus and Jhelum, and the high metallicity as well as the high ratio of BS to BHB stars indeed indicate a massive progenitor.
@@ -303,10 +305,11 @@ Furthermore, both streams may extend beyond their currently measured extent.
 For example, Figure~\ref{fig:map} shows that our detection of Jhelum is impacted by the Milky Way disk at $\phi_1\gtrsim-25^\circ$ and by dust at $\phi_1\lesssim-5^\circ$.
 If the connection is confirmed, Indus and Jhelum would be one of the longest tidal structures in the Milky Way, and therefore extremely constraining for its gravitational potential \citep{bh2018}.
 A similar analysis of Indus is required to definitively establish the two streams are dynamically related, which we defer to future work.
+\apw{I agree that doing the full Indus selection is out of scope, but what about just looking at the BS/BHB ratio? It would be interesting if it is or isn't comparable to Jhelum!}
 
 The bottom panel of Figure~\ref{fig:galactocentric} zooms in on Jhelum's current location, and also shows the distribution of its likely members (assuming the distance gradient from the best-fit orbit).
 Jhelum's wide component is $\sim0.5\,\rm kpc$ further from the Galactic plane than its narrow component.
-The orbit matches the narrow Jhelum component, but none of the previous orbital wraps pass through the wide component, arguing against the two components being debris of a single progenitor released at subsequent pericentric passages.
+The orbit matches the narrow Jhelum component, but none of the previous orbital wraps pass through the wide component, arguing against the two components being debris from a single progenitor released at subsequent pericentric passages.
 % In the next section we discuss possible origin scenarios for the transverse structure of the Jhelum stream.
 
 
