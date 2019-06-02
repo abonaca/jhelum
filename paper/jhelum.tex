@@ -119,7 +119,8 @@ In \S\ref{sec:discussion} we conclude with a discussion of possible origin scena
 \label{sec:data}
 We start our analysis by defining a coordinate system $(\phi_1,\phi_2)$ that is aligned with the Jhelum stellar stream.
 The great circle best-fitting the Jhelum track has a pole $(\alpha_{2000},\delta_{2000}) = (359.1^\circ, 38.2^\circ)$ \citep{shipp2018}.
-The rotation matrix that converts equatorial $(\alpha, \delta)$ coordinates to Jhelum coordinates $(\phi_1, \phi_2)$, where $\phi_1$ is the coordinate along the stream and $\phi_2$ is perpendicular to the stream track, is available electronically at \url{https://github.com/abonaca/jhelum}.
+\apw{If you put the pole coordinates, you might also want to include the longitude zero-point? But I guess it doesn't really matter since you give the rotation matrix...}
+The rotation matrix that converts equatorial $(\alpha, \delta)$ coordinates to Jhelum coordinates $(\phi_1, \phi_2)$, where $\phi_1$ is the coordinate along the stream and $\phi_2$ is perpendicular to the stream track, is available electronically at \url{https://github.com/abonaca/jhelum} and is implemented as a stream coordinate frame in \texttt{Gala} \citep{gala}.
 In these coordinates, Jhelum is centered at $\phi_2=0$, and the DES detection spans $-5^\circ\lesssim\phi_1\lesssim25^\circ$ \citep{shipp2018}.
 
 \begin{figure}
