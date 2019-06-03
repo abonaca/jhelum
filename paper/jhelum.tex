@@ -119,7 +119,8 @@ In \S\ref{sec:discussion} we conclude with a discussion of possible origin scena
 \label{sec:data}
 We start our analysis by defining a coordinate system $(\phi_1,\phi_2)$ that is aligned with the Jhelum stellar stream.
 The great circle best-fitting the Jhelum track has a pole $(\alpha_{2000},\delta_{2000}) = (359.1^\circ, 38.2^\circ)$ \citep{shipp2018}.
-\apw{If you put the pole coordinates, you might also want to include the longitude zero-point? But I guess it doesn't really matter since you give the rotation matrix...}
+We use a coordinate system with the origin at $(\alpha,\,\delta) = (359.1^\circ,\,-51.9^\circ)$.
+% \apw{If you put the pole coordinates, you might also want to include the longitude zero-point? But I guess it doesn't really matter since you give the rotation matrix...}
 The rotation matrix that converts equatorial $(\alpha, \delta)$ coordinates to Jhelum coordinates $(\phi_1, \phi_2)$, where $\phi_1$ is the coordinate along the stream and $\phi_2$ is perpendicular to the stream track, is available electronically at \url{https://github.com/abonaca/jhelum} and is implemented as a stream coordinate frame in \texttt{Gala} \citep{gala}.
 In these coordinates, Jhelum is centered at $\phi_2=0$, and the DES detection spans $-5^\circ\lesssim\phi_1\lesssim25^\circ$ \citep{shipp2018}.
 
@@ -227,7 +228,7 @@ Two components are detected both between $6^\circ<\phi_1<11^\circ$ and between $
 At Jhelum's trailing end ($20^\circ<\phi_1<25^\circ$, right-most panel), there is again a single component, but almost twice as wide as that on the leading end.
 Curiously, the narrow component visible in the first three panels has an approximately constant width of $\sim0.25^\circ$ ($\sim60\,$pc).
 This diversity of transverse density profiles along Jhelum underlines the intricacy of its formation history.
-In the next section we discuss scenarios that could produce such structures.
+% In the next section we discuss scenarios that could produce such structures.
 
 \section{Properties of the Jhelum components}
 \label{sec:origin}
@@ -305,7 +306,7 @@ Furthermore, both streams may extend beyond their currently measured extent.
 For example, Figure~\ref{fig:map} shows that our detection of Jhelum is impacted by the Milky Way disk at $\phi_1\gtrsim-25^\circ$ and by dust at $\phi_1\lesssim-5^\circ$.
 If the connection is confirmed, Indus and Jhelum would be one of the longest tidal structures in the Milky Way, and therefore extremely constraining for its gravitational potential \citep{bh2018}.
 A similar analysis of Indus is required to definitively establish the two streams are dynamically related, which we defer to future work.
-\apw{I agree that doing the full Indus selection is out of scope, but what about just looking at the BS/BHB ratio? It would be interesting if it is or isn't comparable to Jhelum!}
+% \apw{I agree that doing the full Indus selection is out of scope, but what about just looking at the BS/BHB ratio? It would be interesting if it is or isn't comparable to Jhelum!}
 
 The bottom panel of Figure~\ref{fig:galactocentric} zooms in on Jhelum's current location, and also shows the distribution of its likely members (assuming the distance gradient from the best-fit orbit).
 Jhelum's wide component is $\sim0.5\,\rm kpc$ further from the Galactic plane than its narrow component.
@@ -318,7 +319,7 @@ The orbit matches the narrow Jhelum component, but none of the previous orbital 
 The combination of Gaia astrometry and DES photometry allows us to cleanly select members of the Jhelum stream.
 The resulting map reveals Jhelum has two statistically-significant parallel components, separated by $\sim0.9^\circ$ ($\sim200\,\rm pc$).
 The two components have similar stellar populations and similar proper motion gradients, which suggests they originate from the same progenitor.
-However, in a simple Milky Way potential, the orbit that best-fits the observed distribution of the narrow component fails to simultaneously match the wide component.
+% However, in a simple Milky Way potential, the orbit that best-fits the observed distribution of the narrow component fails to simultaneously match the wide component.
 
 Here we discuss possible origin scenarios for the two components of the Jhelum stream:
 \begin{itemize}
@@ -330,7 +331,10 @@ Here we discuss possible origin scenarios for the two components of the Jhelum s
  The velocity dispersion in each component should reflect their local environment prior to the formation of the stream \citep[e.g.,][]{fardal2015}.
  Precise measurements of either proper motions or radial velocities can test whether the wide component is indeed kinematically hotter than the narrow one.
  }
- \item{\emph{Multiple wraps:} 
+ \item{\emph{Different orbital wraps:} similar to Indus being aligned with an old orbital wrap of the Jhelum's orbit, the Jhelum components may originate from different orbital passages of a single progenitor.
+ While our best-fit orbit does not simultaneously pass through both components, the Galactocentric $z$ separation of several-Gyr-old orbital wraps is similar to that of the Jhelum components (Figure~\ref{fig:galactocentric}).
+ Better characterization of the orbit through more precise measurements of the stream distance and kinematics will test this scenario.
+ If Jhelum's wide component is indeed an old wrap of the orbit that best-fits its narrow component, the stream will put extremely tight constraints on the gravitational potential.
  }
  \item{\emph{Fold caustic:} tidal debris distributed in a plane, but viewed almost edge-on, could produce the density profile observed in Jhelum.
  Two-dimensional shells are commonly observed \citep[e.g.,][]{tal2009,kadofong2018}, however, their densest part, unlike Jhelum's, is at the largest galactocentric radius.
@@ -342,7 +346,7 @@ Here we discuss possible origin scenarios for the two components of the Jhelum s
  This effect is not captured in simple streakline models of streams, so more detailed, $N$-body modeling of Jhelum is required.
  \apw{I'm confused about this statement: mock stream models definitely do capture the effect of differential orbital precession, so I think this paragraph needs to be edited or dropped.}
  }
- \item{\emph{Chaos:} streams formed on chaotic (even weakly-chaotic) orbits may deveop low surface-brightness envelopes \citep[e.g.,][]{pw2016}.
+ \item{\emph{Chaos:} streams formed on chaotic (even weakly-chaotic) orbits may develop low surface-brightness envelopes \citep[e.g.,][]{pw2016}.
  However, in our simple gravitational potential, Jhelum's orbit is regular (see Figure~\ref{fig:galactocentric}):
  Within the Galactocentric radii relevant to Jhelum, the global mass distribution is likely close to spherical or mildly oblate \citep[e.g.,][]{kupper2015}, and thus chaos driven by the global potential is likely not relevant for Jhelum.
  % A chaotic orbit may still be possible if the adopted potential is very different from the true one, although this is disfavored by Indus matching Jhelum's orbit.
