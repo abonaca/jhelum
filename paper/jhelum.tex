@@ -39,28 +39,28 @@
 \author[0000-0003-0872-7098]{Adrian~M.~Price-Whelan}
 \affil{Department of Astrophysical Sciences, Princeton University, Princeton, NJ 08544, USA}
 
-\author{collaborators}
-
-% \author[0000-0003-2866-9403]{David W. Hogg}
-% \affiliation{Center for Cosmology and Particle Physics,
-% Department of Physics,
-% New York University}
-% \affiliation{Center for Data Science,
-% New York University}
-% \affiliation{Max-Planck-Institut f\"ur Astronomie, Heidelberg}
-% \affiliation{Flatiron Institute, Simons Foundation}
+\author[0000-0003-2866-9403]{David W. Hogg}
+\affiliation{Center for Cosmology and Particle Physics,
+Department of Physics,
+New York University}
+\affiliation{Center for Data Science,
+New York University}
+\affiliation{Max-Planck-Institut f\"ur Astronomie, Heidelberg}
+\affiliation{Flatiron Institute, Simons Foundation}
 
 \begin{abstract}\noindent % trust me
-% \apw{Ray Carlberg might object to this first statement, given his recent paper. Maybe you want to qualify this by saying "Simple simulations" or "...of tidally disrupting Milky Way satellites in simple gravitational fields produce..."?}
-Simple simulations of tidally disrupting Milky Way satellites produce long and thin---nearly one-dimensional---stellar streams.
+In simple models of the Milky Way, tidally disrupting satellites produce long and thin---nearly one-dimensional---stellar streams.
 Using astrometric data from the Gaia second data release and photometry from the Dark Energy Survey, we demonstrate that the Jhelum stream, a stellar stream in the inner halo, is a two-dimensional structure.
 The spatial distribution of highly probable Jhelum members reveals a dense thin component and an associated diffuse, spatially offset component.
 These two spatial components have indistinguishable proper motions and a similar ratio of blue straggler to blue horizontal branch stars, which indicates a common origin for the two components.
+The best-fit orbit to the narrow component (pericenter $8\,\kpc$, apocenter $24\,\kpc$), however, does not explain the wide component of the Jhelum stream.
+On the other hand, an older orbital wrap of Jhelum's orbit traces the Indus stream, indicating a possible connection between these two structures and an additional complexity in Jhelum's formation.
+Substructure in the Jhelum progenitor or precession of its tidal debris in the Milky Way potential may explain the observed structure of Jhelum.
+Future spectroscopic data will enable discrimination between these ``nature'' and ``nurture'' formation scenarios.
+Jhelum adds to the growing list of cold stellar streams that display complex morphologies and promise to resolve the dynamical history of the Milky Way.
+% \apw{Ray Carlberg might object to this first statement, given his recent paper. Maybe you want to qualify this by saying "Simple simulations" or "...of tidally disrupting Milky Way satellites in simple gravitational fields produce..."?}
 % \apw{This sentence feels like a nonsequitur because the mention of Indus comes out of nowhere. Also, stream people might object because no orbit fit will capture more spatially extended features. I tried to rephrase!}
 % However, while the best-fit orbit to the narrow component also traces the Indus stream, it does not capture Jhelum's wide component.
-However, the best-fit orbit (pericenter $8\,\kpc$, apocenter $24\,\kpc$) to the narrow component does not explain the wide component of the Jhelum stream, but does also trace the Indus stream, indicating a possible connection between these two structures.
-Substructure in the Jhelum progenitor or precession of its tidal debris in the Milky Way potential may explain the observed structure of Jhelum, and future spectroscopic data will enable discrimination between these formation scenarios.
-Jhelum adds to the growing list of cold stellar streams that display complex morphologies and promise to uncover the dynamical history of the Milky Way.
 % Stellar streams observed in the \gaia\ era have substructure and it contains a rich volume on the dynamical history of the Milky Way.
 \end{abstract}
 
@@ -84,12 +84,12 @@ Galaxy:~kinematics~and~dynamics
 
 Stars escaping from globular clusters form thin, dynamically cold tidal streams \citep[e.g.,][]{combes1999}.
 The phase-space distribution of tidal debris is predominantly determined by the gravitational tidal field, so \citet{johnston1999} proposed measuring the distribution of matter in the Galaxy using stellar streams.
-In detail, the mean track of a stream constrains the enclosed mass at its current location \citep{bh2018}.
+In a time-independent potential, the mean track of a stream constrains the acceleration vector at its current location \citep{bh2018}.
 As more than 40 stellar streams have been discovered at a range of distances in the Milky Way halo \citep[see][for a recent review]{gc2016}, streams should provide a three-dimensional map of the Galactic potential.
 
 Being long and thin structures, stellar streams also preserve a historical record of gravitational perturbations on small scales and have been discussed as tracers of dark matter substructure \citep[e.g.,][]{johnston2002, carlberg2009}.
 A telltale signature of an interaction with a dark matter subhalo is a gap in the stellar density along the stream \citep[e.g.,][]{ibata2002, yoon2011, eb2015}.
-Tantalizing hints of stream gaps were first observed in photometric surveys \citep[e.g.,][]{carlberg2012,cg2013}, and gaps were definitively detected in the GD-1 stellar stream \citep{gd2006} when \citet{pwb} used \gaia\ proper motions to cleanly select likely stream members.
+Tantalizing hints of stream gaps were first observed in photometric surveys \citep[e.g.,][]{carlberg2012,cg2013}, and gaps were definitively detected in the GD-1 stellar stream \citep{gd2006} when we used \gaia\ proper motions to cleanly select likely stream members \citep{pwb}.
 This discovery opened a new era in which globular cluster streams are no longer simple tracers of the global gravitational potential, but instead provide additional constraints  through their complex density structure.
 
 In addition to opening gaps along the stream, a dynamic, clumpy and/or time-dependent, environment can disperse stars from originally thin streams to form much wider structures \citep[e.g.,][]{bonaca2014, ngan2016, pw2016, pearson2017}.
@@ -179,7 +179,8 @@ The lines are offset from the best-fitting polynomial to the running median of t
 \input{polytrack}
 \label{eq:track}
 \end{equation}
-Whereas there is a large density gradient along the $\phi_1$ direction, as positive $\phi_1$ values correspond to lower galactic latitudes, the overall stellar density changes little across the stream in the $\phi_2$ direction at a fixed $\phi_1$ location.
+where $\phi_1$ and $\phi_2$ are in degrees.
+While there is a large density gradient along the $\phi_1$ direction, as positive $\phi_1$ values correspond to lower galactic latitudes, the overall stellar density changes little across the stream in the $\phi_2$ direction at a fixed $\phi_1$ location.
 
 Density variations observed in streams can also originate from nonuniform dust attenuation \citep[e.g.,][]{ibata2016}.
 In that case, the features observed in the stream correlate with a dust map.
@@ -229,6 +230,7 @@ Curiously, the narrow component visible in the first three panels has an approxi
 This diversity of transverse density profiles along Jhelum underlines the intricacy of its formation history.
 % In the next section we discuss scenarios that could produce such structures.
 
+\pagebreak
 \section{Properties of the Jhelum components}
 \label{sec:origin}
 The Jhelum stellar stream appears to have two spatially distinct components (Figure~\ref{fig:map}).
@@ -355,8 +357,10 @@ Here we discuss possible origin scenarios for the two components of the Jhelum s
 %  \apw{I didn't like the argument that was here, or at least it's not very strong. I added a sentence with a different argument.}
  }
  \item{\emph{Time-dependent perturbations:} massive, dynamical perturbers such as the rotating bar or Large Magellanic Cloud (LMC) can affect the structure of stellar streams \citep[e.g.,][]{pw2016b, pearson2017, erkal2019}.
- Since Jhelum is orbiting in the inner Galaxy, the LMC is likely not a major perturber (its closest approach was $\gtrsim30$\,kpc).
- However, Jhelum comes within $\sim8\,$kpc from the Galactic center, where the bar may influence even streams on retrograde orbits.
+%  Since Jhelum is orbiting in the inner Galaxy, the LMC is likely not a major perturber (its closest approach was $\gtrsim30$\,kpc).
+%  However, Jhelum comes within $\sim8\,$kpc from the Galactic center, where the bar may influence even streams on retrograde orbits.
+ Jhelum is on a retrograde orbit in the inner Galaxy, which limits the influence of both the LMC and the bar.
+ However, perturbations from a population of low-mass objects can also result in complex morphologies of stellar streams \citep[e.g.,][]{bonaca2014}, and remain a viable mechanism for shaping the Jhelum stream.
  }
 \end{itemize}
 
