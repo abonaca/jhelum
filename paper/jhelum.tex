@@ -52,12 +52,12 @@ New York University}
 In simple models of the Milky Way, tidally disrupting satellites produce long and thin---nearly one-dimensional---stellar streams.
 Using astrometric data from the Gaia second data release and photometry from the Dark Energy Survey, we demonstrate that the Jhelum stream, a stellar stream in the inner halo, is a two-dimensional structure.
 The spatial distribution of highly probable Jhelum members reveals a dense thin component and an associated diffuse, spatially offset component.
-These two spatial components have indistinguishable proper motions and a similar ratio of blue straggler to blue horizontal branch stars, which indicates a common origin for the two components.
+These two spatial components have indistinguishable proper motions (at $\sigma\sim1\,\rm mas\,yr^{-1}$ level) and a similar ratio of blue straggler to blue horizontal branch stars, which indicates a common origin for the two components.
 The best-fit orbit to the narrow component (pericenter $8\,\kpc$, apocenter $24\,\kpc$), however, does not explain the wide component of the Jhelum stream.
-On the other hand, an older orbital wrap of Jhelum's orbit traces the Indus stream, indicating a possible connection between these two structures and an additional complexity in Jhelum's formation.
+On the other hand, an older orbital wrap of Jhelum's orbit traces the Indus stream, indicating a possible connection between these two structures and additional complexity in Jhelum's formation.
 Substructure in the Jhelum progenitor or precession of its tidal debris in the Milky Way potential may explain the observed structure of Jhelum.
 Future spectroscopic data will enable discrimination between these ``nature'' and ``nurture'' formation scenarios.
-Jhelum adds to the growing list of cold stellar streams that display complex morphologies and promise to resolve the dynamical history of the Milky Way.
+Jhelum adds to the growing list of cold stellar streams that display complex morphologies and promise to reveal the dynamical history of the Milky Way.
 % \apw{Ray Carlberg might object to this first statement, given his recent paper. Maybe you want to qualify this by saying "Simple simulations" or "...of tidally disrupting Milky Way satellites in simple gravitational fields produce..."?}
 % \apw{This sentence feels like a nonsequitur because the mention of Indus comes out of nowhere. Also, stream people might object because no orbit fit will capture more spatially extended features. I tried to rephrase!}
 % However, while the best-fit orbit to the narrow component also traces the Indus stream, it does not capture Jhelum's wide component.
@@ -90,7 +90,7 @@ As more than 40 stellar streams have been discovered at a range of distances in 
 Being long and thin structures, stellar streams also preserve a historical record of gravitational perturbations on small scales and have been discussed as tracers of dark matter substructure \citep[e.g.,][]{johnston2002, carlberg2009}.
 A telltale signature of an interaction with a dark matter subhalo is a gap in the stellar density along the stream \citep[e.g.,][]{ibata2002, yoon2011, eb2015}.
 Tantalizing hints of stream gaps were first observed in photometric surveys \citep[e.g.,][]{carlberg2012,cg2013}, and gaps were definitively detected in the GD-1 stellar stream \citep{gd2006} when we used \gaia\ proper motions to cleanly select likely stream members \citep{pwb}.
-This discovery opened a new era in which globular cluster streams are no longer simple tracers of the global gravitational potential, but instead provide additional constraints  through their complex density structure.
+This discovery opened a new era in which globular cluster streams are no longer simple tracers of the global gravitational potential, but instead provide additional constraints  through their complex internal structure.
 
 In addition to opening gaps along the stream, a dynamic, clumpy and/or time-dependent, environment can disperse stars from originally thin streams to form much wider structures \citep[e.g.,][]{bonaca2014, ngan2016, pw2016, pearson2017}.
 Alternatively, a globular cluster that started disrupting in a satellite galaxy before its accretion to the main Milky Way halo, can create a cold stream that is also accompanied by a wide, low surface-brightness component \citep{carlberg2018}.
@@ -141,17 +141,6 @@ We query the Gaia DR2 \citep{gdr2} and DES DR1 \citep{abbott2018} catalogs betwe
 DES photometry was dereddened using \citet{sfd} dust maps.
 Assuming a constant distance along the stream of 13\,kpc, we correct the whole catalog for the solar reflex motion following \citet{pwb}.
 
-Following these corrections, Jhelum stars are clearly separated from the Milky Way field population in the proper motion and color-magnitude spaces.
-Figure~\ref{fig:properties} shows proper motions (top) and color-magnitude diagram (bottom) for a stream field ($0^\circ<\phi_1<25^\circ$, $0^\circ<\phi_2<1^\circ$, left) and a comparison field ($0^\circ<\phi_1<25^\circ$, $3.5^\circ<|\phi_2|<4^\circ$, right).
-In proper motions, Jhelum stands out from the Milky Way as a retrograde stream, and we select likely members between $-8<\mu_{\phi_1,\star}/{\rm mas\,yr^{-1}}<-4$ and $-2<\mu_{\phi_2}/{\rm mas\,yr^{-1}}<2$.
-The stream also appears as a prominent overdensity of main sequence stars, which we select following a 12\,Gyr old, metal-poor ($\rm[Fe/H]=-1.5$) MIST isochrone \citep{choi2016} between $19<g_0<21.3$.
-Both of these selection regions are shown in light orange in Figure~\ref{fig:properties}.
-% In the next section, we discuss the spatial distribution of identified Jhelum member stars.
-
-
-\section{Density structure of Jhelum}
-\label{sec:structure}
-
 \begin{figure*}
 \begin{center}
 \includegraphics[width=0.9\textwidth]{map.pdf}
@@ -165,13 +154,36 @@ This morphology is intrinsic to the stellar stream, as similar signatures are ab
 \label{fig:map}
 \end{figure*}
 
+Following these corrections, Jhelum stars are clearly separated from the Milky Way field population in the proper motion and color-magnitude spaces.
+Figure~\ref{fig:properties} shows proper motions (top) and color-magnitude diagram (bottom) for a stream field ($0^\circ<\phi_1<25^\circ$, $0^\circ<\phi_2<1^\circ$, left) and a comparison field ($0^\circ<\phi_1<25^\circ$, $3.5^\circ<|\phi_2|<4^\circ$, right).
+In proper motions, Jhelum stands out from the Milky Way as a retrograde stream, and we select likely members between $-8<\mu_{\phi_1,\star}/{\rm mas\,yr^{-1}}<-4$ and $-2<\mu_{\phi_2}/{\rm mas\,yr^{-1}}<2$.
+The stream also appears as a prominent overdensity of main sequence stars, which we select following a 12\,Gyr old, metal-poor ($\rm[Fe/H]=-1.5$) MIST isochrone \citep{choi2016} between $19<g_0<21.3$.
+Both of these selection regions are shown in light orange in Figure~\ref{fig:properties}.
+% In the next section, we discuss the spatial distribution of identified Jhelum member stars.
+
+\section{Density structure of Jhelum}
+\label{sec:structure}
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{phi2_histograms.pdf}
+\end{center}
+\caption{
+The profile of likely Jhelum members changes along the stream.
+Panels show $5^\circ$ wide regions along the stream, with the location in $\phi_1$ (indicated at the top) growing from left to right.
+Between $-3^\circ<\phi_1<2^\circ$, only a narrow component of the stream is present, while in the next $\phi_1$ bin, $6^\circ<\phi_1<11^\circ$, the stream features both the narrow and the wide component.
+Further along the stream, $15^\circ<\phi_1<20^\circ$, the stream consists of two narrow components separated by a gap, while at the trailing end, $20^\circ<\phi_1<25^\circ$, the gap vanishes and the stream appears as a single, wide feature.
+}
+\label{fig:histo}
+\end{figure*}
+
 Sky positions of Jhelum members selected in Section~\ref{sec:data} are presented in the top left panel of Figure~\ref{fig:map}.
 Although some contamination from the Milky Way field stars remains, the stream stands out as an overdensity between $-5^\circ<\phi_1<25^\circ$, $-1^\circ<\phi_2<1^\circ$.
 Despite the increase in the purity of the stream membership, this extent is similar to the initial detection reported by \citet{shipp2018}.
 However, the new data reveal unexpected internal structure of the stream: the density of stream members is higher at $\phi_2>0$ than at $\phi_2<0$.
 The $\phi_2$ distribution of likely Jhelum members (Figure~\ref{fig:map}, top right) has two clear components, with a more prominent, narrow component at $\phi_2>0$, and a less prominent, diffuse component peaking at $\phi_2\approx0$.
 
-Surveys such as Gaia and DES have complex selection functions \citep[e.g.,][]{bovy2017}, which can imprint density inhomogeneities in all stellar maps.
+Surveys such as Gaia and DES have complex selection functions \citep[e.g.,][]{bovy2017}, which can imprint density inhomogeneities in stellar maps.
 To test whether the density structure observed in Jhelum is inherited from a survey strategy, we show a density map of all stars in our input catalog (Gaia crossmatched with DES, and with parallax $\varpi<1\,\rm mas$) in the middle panel of Figure~\ref{fig:map}.
 Dashed white lines bracket the two Jhelum components.
 The lines are offset from the best-fitting polynomial to the running median of the dense Jhelum component:
@@ -187,19 +199,6 @@ In that case, the features observed in the stream correlate with a dust map.
 Extinction along Jhelum varies between $A_V\sim0.2-0.5$ \citep[Figure~\ref{fig:map}, bottom;][]{sfd}.
 The regions of high dust attenuation at $(\phi_1,\phi_2)\approx(1^\circ,0.5^\circ)$ and $(\phi_1,\phi_2)\approx(19^\circ,-2^\circ)$ correspond to regions of reduced Jhelum density, however, there are no global gradients in dust extinction perpendicular to the stream.
 Therefore, we conclude that the transverse variations in Jhelum density are intrinsic to the stream itself.
-
-\begin{figure*}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{phi2_histograms.pdf}
-\end{center}
-\caption{
-The profile of likely Jhelum members changes along the stream.
-Panels show $5^\circ$ wide regions along the stream, with the location in $\phi_1$ (indicated at the top) growing from left to right.
-Between $-3^\circ<\phi_1<2^\circ$, only a narrow component of the stream is present, while in the next $\phi_1$ bin, $6^\circ<\phi_1<11^\circ$, the stream features both the narrow and the wide component.
-Further along the stream, $15^\circ<\phi_1<20^\circ$, the stream consists of two narrow components separated by a gap, while at the trailing end, $20^\circ<\phi_1<25^\circ$, the gap vanishes and the stream appears as a single, wide feature.
-}
-\label{fig:histo}
-\end{figure*}
 
 To quantify substructure in the Jhelum stellar stream, we model the $\phi_2$ distribution of likely stream members (Figure~\ref{fig:map}, top right).
 We assume a mixture model with two Gaussian components (defined by means $\mu_{1,2}$ and variances $\sigma^2_{1,2}$ for the narrow and wide component, respectively) and a background which is allowed to linearly vary with $\phi_2$ (defined by the gradient $a\rm_{bg}$).
@@ -217,7 +216,7 @@ The sampler ran with 64 walkers for 4096 steps, the first half of which were dis
 The highest-likelihood model (gray line in the top right of Figure~\ref{fig:map}) reproduces well the observed distribution of Jhelum stars.
 The amplitudes of both Gaussian components are statistically significant: \input{a1} for the narrow, and \input{a2} for the diffuse component.
 Their respective widths are \input{s1}\,deg and \input{s2}\,deg.
-At a distance of 13\,kpc, this corresponds to \input{w1}\,pc and \input{w2}\,pc, respectively, which is comparable to the widths of globular cluster streams in the Milky Way.
+At a distance of 13\,kpc, this corresponds to \input{w1}\,pc and \input{w2}\,pc, respectively, which is comparable to the widths of known globular cluster streams in the Milky Way (e.g., Palomar~5 stream is $\sim120$\,pc wide, \citealt{odenkirchen2003}).
 
 The prominence of the two Jhelum components changes along the stream (see Figure~\ref{fig:map}).
 % The transverse structure of the Jhelum stream is globally asymmetric, however, there are variations along the stream (see Figure~\ref{fig:map}).
@@ -230,7 +229,7 @@ Curiously, the narrow component visible in the first three panels has an approxi
 This diversity of transverse density profiles along Jhelum underlines the intricacy of its formation history.
 % In the next section we discuss scenarios that could produce such structures.
 
-\pagebreak
+% \pagebreak
 \section{Properties of the Jhelum components}
 \label{sec:origin}
 The Jhelum stellar stream appears to have two spatially distinct components (Figure~\ref{fig:map}).
@@ -291,16 +290,16 @@ The dense Jhelum component is closer to the Galactic plane than the diffuse comp
 \end{figure}
 
 Finally, we explore whether both Jhelum components can be explained within a simple dynamical model.
-Assuming a standard Milky Way potential \citep{gala}, we use the BFGS minimization algorithm to search for orbits that simultaneously fit the sky distribution of the narrow component, its proper motion profile and that place stream at a constant distance of 13\,kpc (similar to the orbit-fitting method defined and used in \citealt{pwb}).
+Assuming a standard Milky Way potential \citep{gala}, we use the BFGS minimization algorithm to search for orbits that simultaneously fit the sky distribution of the narrow component, its proper motions and that place the stream at a constant distance of 13\,kpc (similar to the orbit-fitting method defined and used in \citealt{pwb}).
 The best-fitting orbit, shown as a thin line in Figure~\ref{fig:components}, matches the observed track and proper motion gradients.
 
 In Figure~\ref{fig:galactocentric} we present the Jhelum stream and its best-fitting orbit in cylindrical Galactocentric coordinates.
 The thin orange line traces Jhelum's orbit for the last 5\,Gyr, while the thick light blue line marks the present-day extent of the stream (top panel).
-Jhelum orbits between 8 and 24\,kpc, with a period of $\sim300$\,Myr, and is currently just past the pericenter.
+Jhelum orbits between 8 and 24\,kpc, with a period of $\sim300$\,Myr, and is currently just past pericenter.
 
 % \apw{I got confused here: what is the 0.5 Gyr old segment? Also: I think 5 Gyr is probably too long to show. The orbit integration definitely can't be trusted for that long of a time period because the potential isn't known or defined very precisely.}
 Remarkably, a past orbital wrap of the Jhelum stream traces the Indus stream in the Galactocentric $R-z$ plane (thick dark blue line in top of Figure~\ref{fig:galactocentric}, based on the sky positions and typical distance reported in \citealt{shipp2018}).
-This agreement may be dynamical evidence that Indus and Jhelum are different orbital arms of the same progenitor, first suggested by \citet{shipp2018} based on the streams' similar width, $\sim1^\circ$, and metallicity, $\rm[Fe/H]\sim-1.4$, as well as their physical proximity.
+This agreement may be dynamical evidence that Indus and Jhelum are different orbital arms of the same progenitor, first suggested by \citet{shipp2018} based on the streams' similar width, $\sim1^\circ$, and photometric metallicity, $\rm[Fe/H]\sim-1.4$, as well as their physical proximity.
 A fairly massive progenitor would be required to produce the combined stellar debris of Indus and Jhelum, and the high metallicity as well as the high ratio of BS to BHB stars indeed indicate a massive progenitor.
 % Indus being another wrap of the Jhelum stream would also be consistent with the massive progenitor inferred from the high BS to BHB ratio, as well as their metallicity.
 Furthermore, both streams may extend beyond their currently measured extent.
@@ -320,22 +319,27 @@ The orbit matches the narrow Jhelum component, but none of the previous orbital 
 The combination of Gaia astrometry and DES photometry allows us to cleanly select members of the Jhelum stream.
 The resulting map reveals Jhelum has two statistically-significant parallel components, separated by $\sim0.9^\circ$ ($\sim200\,\rm pc$).
 The two components have similar stellar populations and similar proper motion gradients, which suggests they originate from the same progenitor.
+Current constraints on the stream's metallicity and relative abundance of blue straggler and blue horizontal branch stars cannot distinguish between a globular cluster and a dwarf galaxy progenitor.
+% - the nature of the progenitor unknown
 % However, in a simple Milky Way potential, the orbit that best-fits the observed distribution of the narrow component fails to simultaneously match the wide component.
 
-Here we discuss possible origin scenarios for the two components of the Jhelum stream:
+Here we discuss possible origin scenarios for the two components of the Jhelum stream in the context of these observations:
 \begin{itemize}
- \item{\emph{Multiple progenitors:} the similar ratios of blue straggler to blue horizontal branch stars suggest that the two components have the same stellar population, but there is still room for two distinct progenitors that have similar BS to BHB ratios \citep[e.g., a low-mass globular cluster and a low-mass dwarf galaxy,][]{deason2015}.
+ \item{\emph{Multiple progenitors:} the similar ratios of blue straggler to blue horizontal branch stars suggest that the two components have the same stellar population, but there is still room for two distinct progenitors that have similar BS to BHB ratios \citep[e.g., a system of a low-mass globular cluster and a low-mass dwarf galaxy,][]{deason2015}.
  This hypothesis can be directly tested by measuring chemical abundances in the two components.
  }
- \item{\emph{Kinematic substructure in the progenitor:} the disruption of globular clusters initialized in dark matter subhalos leads to non-trivial density structure of the resulting streams \citep[e.g.,][]{penarrubia2017, carlberg2018}.
- In this scenario, the wide component of Jhelum would be stars stripped while the globular cluster was still in the subhalo \citep[similar to the recently reported GD-1 cocoon,][]{malhan2019}, while the narrow component would be stars more recently released directly in the Milky Way gravitational potential.
+ \item{\emph{Kinematic substructure in the progenitor:} substructure in the progenitor may lead to non-trivial density structure of its tidal debris.
+ For example, two spatially distinct components can form if the progenitor is a globular cluster that is initially orbiting in a dark-matter subhalo \citep[e.g.,][]{penarrubia2017, carlberg2018}.
+%  the disruption of globular clusters initialized in dark matter subhalos leads to non-trivial density structure of the resulting streams \citep[e.g.,][]{penarrubia2017, carlberg2018}.
+ In this scenario, the wide component originates from stars stripped while the globular cluster was still in the subhalo \citep[similar to the recently reported GD-1 cocoon,][]{malhan2019}, while the narrow component would be stars more recently released directly in the Milky Way gravitational potential.
+%  In this scenario, the wide component of Jhelum would be stars stripped while the globular cluster was still in the subhalo \citep[similar to the recently reported GD-1 cocoon,][]{malhan2019}, while the narrow component would be stars more recently released directly in the Milky Way gravitational potential.
  The velocity dispersion in each component should reflect their local environment prior to the formation of the stream \citep[e.g.,][]{fardal2015}.
- Precise measurements of either proper motions or radial velocities can test whether the wide component is indeed kinematically hotter than the narrow one.
+ Precise measurements of Jhelum's proper motions or radial velocities can test whether the wide component is indeed kinematically hotter than the narrow one.
  }
  \item{\emph{Different orbital wraps:} similar to Indus being aligned with an old orbital wrap of the Jhelum's orbit, the Jhelum components may originate from different orbital passages of a single progenitor.
  While our best-fit orbit does not simultaneously pass through both components, the Galactocentric $z$ separation of several-Gyr-old orbital wraps is similar to that of the Jhelum components (Figure~\ref{fig:galactocentric}).
  Better characterization of the orbit through more precise measurements of the stream distance and kinematics will test this scenario.
- If Jhelum's wide component is indeed an old wrap of the orbit that best-fits its narrow component, the stream will put extremely tight constraints on the gravitational potential.
+ If Jhelum's wide component is indeed an old wrap of the orbit that best-fits its narrow component, the stream will put extremely strong constraints on the gravitational potential.
  }
  \item{\emph{Fold caustic:} tidal debris distributed in a plane, but viewed almost edge-on, could produce the density profile observed in Jhelum.
  Two-dimensional shells are commonly observed \citep[e.g.,][]{tal2009,kadofong2018}, however, their densest part, unlike Jhelum's, is at the largest galactocentric radius.
@@ -364,15 +368,16 @@ Here we discuss possible origin scenarios for the two components of the Jhelum s
  }
 \end{itemize}
 
-All of these formation scenarios merit further investigation, but solutions where Jhelum is still a coherent tidal structure on a largely unperturbed orbit appear more likely.
+All of these formation scenarios merit further investigation, but solutions where Jhelum remains a coherent tidal structure on a largely unperturbed orbit appear more likely.
 Our best-fit orbit for Jhelum simultaneously (and independently) matches the Indus stream, suggesting that only minor perturbations are allowed from the bar, chaos or LMC.
 Both streams are still coherent, so this argues against the fold caustic interpretation for Jhelum's vertical structure.
-The remaining scenarios can be distinguished with a combination of spectroscopic data and more detailed dynamical modeling.
-Chemical abundances will determine whether both Jhelum components originate from the same progenitor.
-In the case of a single progenitor, confronting the theoretical and observed radial velocities in the two Jhelum components will differentiate between them originating from different substructures within the progenitor or being precessing debris.
+
+A combination of spectroscopic data and more detailed dynamical modeling can further constrain Jhelum's formation scenario.
+Chemical abundances will determine whether both Jhelum components originate from the same progenitor, as well as distinguish between a globular cluster and a dwarf galaxy origin.
+In the case of a single progenitor, confronting the theoretical and observed radial velocities in the two Jhelum components will differentiate between them being different substructures within the progenitor or differentially precessing debris.
 
 The transverse structure that \gaia\ revealed in the Jhelum stream is evidence of a formation mechanism beyond simple tidal disruption.
-The only other stream studied to similar detail with \gaia\ is GD-1 \citep{pwb}, where the discovered off-stream features may be evidence of a recent perturbation \citep{bonaca2018}.
+The only other stream studied to a similar level of detail with \gaia\ is GD-1 \citep{pwb}, where the discovered off-stream features may be evidence of a recent perturbation \citep{bonaca2018}.
 These discoveries signal the dawn of a new era, in which the internal structure of thin stellar streams is used to trace the structure of their formative environment and the Galaxy.
 
 \vspace{0.5cm}
